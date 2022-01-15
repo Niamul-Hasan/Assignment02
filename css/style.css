@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -143,6 +144,7 @@ body{
     align-items: center;
     background-color: #242B2E;
     height: 200px;
+    width: 100%;
 
 
 }
@@ -176,4 +178,26 @@ body{
     font-size: 25px;
     margin-top: 10px;
 
+}
+
+
+/* this is for media quary */
+@media (max-width:688px) {
+    .top-level{
+        grid-template-columns: 1fr;
+    }
+    .top-left{
+        order: 2;
+    }
+    .gallery{
+        grid-template-columns: 1fr;
+        position: relative;
+
+    }
+#foot{
+    position: absolute;
+    width: 100vw;
+}
+
+    
 }
