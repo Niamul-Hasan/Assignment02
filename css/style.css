@@ -183,10 +183,12 @@ body{
 .bonous{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 10px;
+    width: 1200px;
+    padding: 0px;
 }
 .bonous-title{
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 .bonous-right{
@@ -194,9 +196,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin: 0px;
 }
 .bonous-left img{
     width: 70%;
+    border-radius: 25px;
 }
 .button-last{
     font-size: 1.2em;
@@ -235,7 +239,7 @@ body{
 }
 
 /* this is for tablet */
-@media (mai-width:688px) and (max-width:992px) {
+@media (min-width:688px) and (max-width:992px) {
     .top-level,.bonous{
         grid-template-columns: 1fr 1fr;
     }
