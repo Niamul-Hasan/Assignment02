@@ -235,7 +235,7 @@ body{
 }
 
 /* this is for tablet */
-@media (mai-width:688px)and (max-width:992px) {
+@media (mai-width:688px) and (max-width:992px) {
     .top-level,.bonous{
         grid-template-columns: 1fr 1fr;
     }
