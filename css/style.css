@@ -179,24 +179,75 @@ body{
 
 }
 
+/* this is for bonous part */
+.bonous{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.bonous-title{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.bonous-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.bonous-left img{
+    width: 70%;
+}
+.button-last{
+    font-size: 1.2em;
+    background-color: #E02C6D;
+    padding: 10px 5px;
+}
+.button-last a{
+    text-decoration: none;
+    color: white;
+}
+.bonous-right h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 
-/* this is for media quary */
+
+/* this is for media quary for mobile*/
 @media (max-width:688px) {
-    .top-level{
+    .top-level,.bonous{
         grid-template-columns: 1fr;
     }
-    .top-left{
+    .top-left,.bonous-right{
         order: 2;
     }
     .gallery{
         grid-template-columns: 1fr;
         position: relative;
+        align-items: center;
 
     }
 #foot{
-    position: absolute;
+    position: relative;
     width: 100vw;
 }
+   
+}
 
-    
+/* this is for tablet */
+@media (mai-width:688px)and (max-width:992px) {
+    .top-level,.bonous{
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        align-items: center;
+
+    }
+#foot{
+    position: relative;
+    width: 100vw;
+}
+   
 }
