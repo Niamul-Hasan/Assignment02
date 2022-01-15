@@ -41,6 +41,11 @@ body{
 .top-right img{
     width: 70%;
 }
+.top-right:hover img{
+    transform: rotate(45deg);
+    transition: transform 1s ease-out;
+    cursor: pointer;
+}
 .top-right{
     display: flex;
     flex-direction: column;
